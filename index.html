@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/porfolio.svg">
+  <title>Ivan Rodriguez Cornejo</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about-me">Acerca de mi</a></li>
+      <li><a href="#technologies">Tecnologias</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <img src="./assets/images/linux.png" alt="Tu Foto">
+      <div class="header-text">
+        <h1>Ivan Rodriguez Cornejo</h1>
+      </div>
+    </div>
+  </header>
+
+  <section id="about-me">
+    <h3>Acerca de mí</h3>
+    <p>Hola, soy un desarrollador apasionado con dedicación y hambre de aprender nuevas tecnologías. Tengo experiencia
+      en Java, Flutter, JavaScript y otros lenguajes de programación.</p>
+    <h4>Estudios</h4>
+    <div class="tech-card">
+      <img src="./assets/images/itt.png" alt="ITT Icon">
+      <p>Instituto Tecnologico de Tehuacan</p>
+    </div>
+
+    <h4>Experiencia Laboral</h4>
+    <div class="tech-card">
+      <img src="./assets/images/envelope.png" alt="Flutter Icon">
+      <p>Desarrollo movil con Flutter</p>
+    </div>
+  </section>
+
+  <section id="technologies" class="technologies-section">
+    <h3>Tecnologías</h3>
+    <div class="tech-cards-container">
+      <div class="tech-card">
+        <img src="./assets/images/flutter.png" alt="Flutter Icon">
+        <p>Flutter</p>
+      </div>
+      <div class="tech-card">
+        <img src="./assets/images/java.png" alt="Java Icon">
+        <p>Java</p>
+      </div>
+      <div class="tech-card">
+        <img src="./assets/images/js.png" alt="JavaScript Icon">
+        <p>JavaScript</p>
+      </div>
+      <div class="tech-card">
+        <img src="./assets/images/html.png" alt="HTML Icon">
+        <p>HTML</p>
+      </div>
+      <div class="tech-card">
+        <img src="./assets/images/css.png" alt="CSS Icon">
+        <p>CSS</p>
+      </div>
+      <div class="tech-card">
+        <img src="./assets/images/php.png" alt="PHP Icon">
+        <p>PHP</p>
+      </div>
+      <div class="tech-card">
+        <img src="./assets/images/firebase.png" alt="Firebase Icon">
+        <p>Firebase</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h3>Proyectos</h3>
+    <div class="project-container" id="project-container">
+      <div class="project-card">
+        <img src="./assets/images/tdr.png" alt="TDR">
+        <div class="project-info">
+          <h4>Aplicacion Web TDR</h4>
+          <p>Aplicacion Web con la que se gestiona tanto asistencias, pagos y otros procesos de una escuela</p>
+          <a href="https://telesecundariadiegorivera.000webhostapp.com/">Ver proyecto</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./assets/images/ezsafe.png" alt="EzSafe">
+        <div class="project-info">
+          <h4>EzSafe</h4>
+          <p>Aplicacion movil multiplataforma para controlar las visitas a un vecindario</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./assets/images/ezsafe.png" alt="EzSafe">
+        <div class="project-info">
+          <h4>EzSafe</h4>
+          <p>Aplicacion movil multiplataforma para controlar las visitas a un vecindario</p>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-buttons">
+      <button class="prev" onclick="changeProject(-1)">&#10094;</button>
+      <button class="next" onclick="changeProject(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h3>Contacto</h3>
+    <form id="contact-form" onsubmit="submitForm(event)">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Todos los derechos reservados &copy; 2023 Ivan Rodriguez Cornejo</p>
+      <ul class="footer-links">
+        <li><a href="https://twitter.com/IvanRod49576845"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://github.com/ivanroco"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="www.linkedin.com/in/ivanroco"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
